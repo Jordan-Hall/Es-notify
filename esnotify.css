@@ -1,0 +1,25 @@
+.esnotify-view {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+}
+
+.esnotify-toast {
+    border-radius: 3px;
+    margin-top: 8px;
+    padding: 10px, 15px;
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+.esnotify-info {
+    box-shadow: 0 0 0px rgba(0, 0, 255, .12), 0 2px 3px rgba(0, 0, 255, .24);
+}
+
+.esnotify-warning {
+    box-shadow: 0 0 0px rgba(255, 194, 0, .12), 0 2px 3px rgba(255, 194, 0, .24);
+}
+
+.esnotify-error {
+    box-shadow: 0 0 0px rgba(255, 0, 0, .12), 0 2px 3px rgba(255, 0, 0, .24);
+}

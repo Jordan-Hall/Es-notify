@@ -1,10 +1,10 @@
-export default class ESNotify {
+class ESNotify {
 
     constructor() {
         this.container = document.querySelector('#esnotify-view');
         if (this.container === null) {
             this.container = document.createElement("div");
-            this.container.id = 'alpha-toast-view';
+            this.container.id = 'esnotify-view';
             this.container.classList.add('esnotify-view');
             document.body.appendChild(this.container);
         }
@@ -23,8 +23,7 @@ export default class ESNotify {
         this.toast(message, time, 'esnotify-error');
     }
     toast(message, time, toastType = 'esnotify-info') {
-        this.view.classList.add('esnotify-view');
-        this.view.classList.add('esnotify-view--visible');
+        this.view.classList.add('esnotify-toast');
         this.view.onclick = this.onclickRemove;
         if (typeof toastType == 'string' || toastType instanceof String) {
             this.view.classList.add(toastType);
@@ -41,3 +40,5 @@ export default class ESNotify {
         this.view.parentNode.removeChild(this.view);
     }
 }
+
+export { ESNotify }
