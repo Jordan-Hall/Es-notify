@@ -1,0 +1,19 @@
+{
+    "name": "esnotify",
+    "version": "0.0.1",
+    "description": "ES6 toast notification",
+    "main": "ESNotify.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Jordan-Hall/Es-notify.git"
+    },
+    "author": "Jordan",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Jordan-Hall/Es-notify/issues"
+    },
+    "homepage": "https://github.com/Jordan-Hall/Es-notify#readme"
+}
