@@ -1,4 +1,4 @@
-class ESNotify {
+export default class ESNotify {
 
     constructor() {
         this.container = document.querySelector('#esnotify-view');
@@ -41,5 +41,3 @@ class ESNotify {
         this.view.parentNode.removeChild(this.view);
     }
 }
-
-export { ESNotify }
