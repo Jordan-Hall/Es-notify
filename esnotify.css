@@ -10,6 +10,8 @@
     padding: 10px, 15px;
     max-width: 200px;
     word-wrap: break-word;
+    opacity: 0;
+    animation: fade linear;
 }
 
 .esnotify-info {
@@ -22,4 +24,8 @@
 
 .esnotify-error {
     box-shadow: 0 0 0px rgba(255, 0, 0, .12), 0 2px 3px rgba(255, 0, 0, .24);
+}
+@keyframes fade {
+  0%,100% { opacity: 0, }
+  40%, 60% { opacity: 1 }
 }
