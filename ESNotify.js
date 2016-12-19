@@ -28,6 +28,7 @@ class ESNotify {
         if (typeof toastType == 'string' || toastType instanceof String) {
             this.view.classList.add(toastType);
         }
+        this.view.style.animationDuration = `${time}ms`;
         this.view.appendChild(document.createTextNode(message));
         this.container.appendChild(this.view);
         clearTimeout(this.hideTimeout);
