@@ -24,7 +24,7 @@ class ESNotify {
     }
     toast(message, time, toastType = 'esnotify-info') {
         this.view.classList.add('esnotify-toast');
-        this.view.onclick = this.onclickRemove;
+        this.view.onclick = this.onclickHide;
         if (typeof toastType == 'string' || toastType instanceof String) {
             this.view.classList.add(toastType);
         }
@@ -33,8 +33,8 @@ class ESNotify {
         clearTimeout(this.hideTimeout);
         this.hideTimeout = setTimeout(this.hideBound, time);
     }
-    onclickRemove() {
-        this.parentNode.removeChild(this);
+    onclickHide() {
+        this.style.display = 'none';
     }
     remove() {
         this.view.parentNode.removeChild(this.view);

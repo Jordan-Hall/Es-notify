@@ -1,6 +1,6 @@
 {
     "name": "esnotify",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "ES6 toast notification",
     "main": "ESNotify.js",
     "scripts": {
